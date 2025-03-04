@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class=" bg-[#F4F7FF]">
+    <!-- navbar -->
+    <nav class="rounded-2xl lg:mx-36 pt-4">
+        <div class="navbar bg-base-100 shadow-sm rounded-xl overflow-hidden p-6">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                </div>
+              </div>
+              <img src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-4xl">
+                <span class="font-light whitespace-nowrap">Dev</span><span class="font-bolder whitespace-nowrap">Board</span>
+              </a>
+              
+              
+            </div>
+            <div class="navbar-end gap-9 ">
+                <a class="btn rounded-[32px] text-3xl font-extrabold gap-3 py-[28px] px-4"><img  src="assets/checkbox.png" alt="button"><span id="completed-task" >23</span></a>
+                <div class="rounded-full p-3 bg-[#F4F7FF]"><a id="color-button" class="btn btn-circle "><img src="assets/theme-btn.png" alt="button"></a></div> 
+            </div>
+          </div>
+    </nav>
+
+    <!-- main part -->
+    <main class="mt-6 mx-36 flex gap-6 h-full">
+
+        <div class="gap-6 flex">
+            <!-- division-left -->
+
+        <div class="w-[75%] gap rounded-2xl px-6 pt-2 pb-6 bg-white rounded-2xl">
+            
+        <!-- Section-1 -->
+<section class="flex gap-3 items-center bg-white rounded-2xl pt-3">
+  <!-- First anchor tag (20%) -->
+  <a class="flex flex-1 items-center gap-3 p-4 h-full bg-[#F4F7FF] rounded-2xl ">
+      <div class=" btn btn-circle btn-lg flex items-center justify-center p-2 bg-white">
+          <img src="assets/checkbox.png" alt="Checkbox" class="w-6 h-6">
+      </div>
+      <div>
+          <p class="text-sm text-gray-500">Task Assigned</p>
+          <h1 id="minus-counter" class="text-xl font-bold text-black">06</h1>
+      </div>
+  </a>
+
+  <!-- Second anchor tag (50%) -->
+  <a id="navigate-button" class="flex flex-1 basis-[40%] min-h-[100px] items-center justify-center gap-2 text-lg font-semibold text-white bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl h-full p-4 btn">
+      <img src="assets/board.png" alt="Board Icon" >
+      <p>Discover Something New Today!</p>
+  </a>
+
+  <!-- Third anchor tag (20%) -->
+  <a class="flex flex-1 items-center gap-3 p-4 h-full bg-[#F4F7FF] rounded-2xl">
+      <div class=" btn btn-circle btn-lg flex items-center justify-center p-2 bg-white">
+          <img src="assets/calender.png" alt="Calendar Icon" class="w-6 h-6">
+      </div>
+      <div>
+          <p class="text-sm text-gray-500"></p>
+          <h1 id="date-display" class="text-sm font-bold text-black"></h1>
+      </div>
+  </a>
+</section>
+
+      
+
+            <div class="divider"></div>
+
+            <!-- sectiopn-2 -->
+            <section class="grid gap-6 grid-rows-2 grid-cols-3 ">
+                <!-- card-1 -->
+            <div class="card shadow-sm bg-[#F4F7FF]">
+                <div class="card-body">
+                  <span class="badge badge-xs">ShopEase</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Fix Mobile Button Issue </h2>
+                  </div>
+                  <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn1" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card-2 -->
+            <div class="card bg-[#F4F7FF] shadow-sm">
+                <div class="card-body">
+                  <span class="badge badge-xs">CloudSync</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Add Dark Mode </h2>
+                  </div>
+                  <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn2" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card-3 -->
+            <div class="card bg-[#F4F7FF] shadow-sm">
+                <div class="card-body">
+                  <span class="badge badge-xs">SwiftPay</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Optimize  Home page  </h2>
+                  </div>
+                  <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn3" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card-4 -->
+            <div class="card bg-[#F4F7FF] shadow-sm">
+                <div class="card-body">
+                  <span class="badge badge-xs">Meta</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Add new emoji 🤲 </h2>
+                  </div>
+                  <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn4" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card-5 -->
+            <div class="card  bg-[#F4F7FF] shadow-sm">
+                <div class="card-body">
+                  <span class="badge badge-xs">Google LLC</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Integrate OpenAI API  </h2>
+                  </div>
+                  <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn5" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card-6 -->
+            <div class="card  bg-[#F4F7FF] shadow-sm">
+                <div class="card-body">
+                  <span class="badge badge-xs">Glassdoar</span>
+                  <div class="flex justify-between task-container">
+                    <h2 class="text-xl font-bold">Improve Job searching  </h2>
+                  </div>
+                  <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="mt-6 flex">
+                    <div class="w-1/2">
+                        <h3>Deadline</h3>
+                        <h1>21 March 2025</h1>
+                    </div>
+                    <button onclick="handleClick(this)" id="btn6" class="btn btn-primary btn-block w-1/2 btns">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+
+            </section>
+        </div>
+
+        <!-- divison-right -->
+        <div class="w-1/4 p-4 rounded-2xl flex flex-col items-center gap-4 bg-white h-full flex-1">
+          <div class="flex items-center gap-2">
+              <img src="assets/activity.png" alt="Activity Icon" class="w-6 h-6">
+              <p class="text-lg font-semibold">Activity Log</p>
+          </div>
+          <button onclick="clearHistory()" class="btn btn-primary text-center">Clear history</button>
+          <div class="divider"></div>
+          <div id="history"></div>
+      </div>
+      
+      
+    </div>
+     </main>
+     <script src="JS/colorchange.js"></script>
+     <script src="JS/page2.js"></script>
+     <script src="JS/completed.js"></script>
+</body>
+</html>
