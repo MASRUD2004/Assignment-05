@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ PAGE</title>
+
+    <!-- DAISY UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <!-- Navbar Section -->
     <nav class="rounded-2xl lg:mx-36 pt-4">
         <div class="navbar bg-base-100 shadow-sm rounded-xl overflow-hidden p-6 f">
             <div class="navbar-start">
+                <!-- Logo and Brand Name -->
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 </div>
@@ -21,14 +25,18 @@
               </a>
             </div>
             <div class="navbar-end gap-9 ">
+                <!-- Back to Desk Button -->
                 <button id="back-to-desk" class="btn btn-mid font-bold bg-indigo-700 text-white rounded-lg">Back To Desk</button>
             </div>
             </div>
           </div>
     </nav>
 
+    <!-- Main Content Section -->
     <main class="mt-6 mx-36 gap-4 flex flex-col">
         <h1 class="flex items-center justify-center font-extrabold text-lg">BLOGS</h1>
+
+        <!-- Question 1 Card -->
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title font-semibold">Question-1:What are the different ways to select an element in the DOM?</div>
@@ -42,8 +50,10 @@
                 </ol>
                 
             </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        </div>
+
+        <!-- Question 2 Card -->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-2:What are the difference between innerHTML,innerText and textContent?</div>
             <div class="collapse-content text-sm">
@@ -54,18 +64,24 @@
                 </ul>
                 
             </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        </div>
+
+        <!-- Question 3 Card -->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-3:What is an evnet delegation in DOM?</div>
             <div class="collapse-content text-sm">Event delegation is a technique where a parent element handles events for its child elements using a single event listener.</div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        </div>
+
+        <!-- Question 4 Card -->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-4:What is an evnet bubbling in DOM?</div>
             <div class="collapse-content text-sm">Event bubbling is a process where an event starts from the target element and propagates up to its parent elements</div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        </div>
+
+        <!-- Question 5 Card -->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
             <div class="collapse-content text-sm">
@@ -75,8 +91,9 @@
                 <li>remove: Removes an element from the DOM.</li>
             </ul>
             </div>
-          </div>
+        </div>
     </main>
+
     <script src="JS/page2.js"></script>
 </body>
 </html>
